@@ -1,0 +1,274 @@
+body {
+    font-family: 'Comic Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(190, 124, 0);
+    color: #ffffff;
+}
+
+
+
+header{
+    width: 70%;
+    height: 10%;
+    margin: 0 auto;
+}
+
+
+.menu {
+    font-size: 1.5vw;
+    font-family: 'Courier New';
+}
+
+.opisanie {
+    border: 2px solid black;
+    margin: 20px auto;
+    width: 70%;
+    height:5%;
+    background-color: rgb(255, 166, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: space-around;
+    position: fixed;
+}
+
+.ssl {
+    text-decoration: none;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat auto-fill minmax(6, 1fr);
+    grid-template-rows: repeat auto-fill max(9, 1fr);
+    grid-gap: 10px; 
+    gap: 10px;
+    padding: 80px;
+    grid-template-areas:
+    "name1 name1 name1 name1 name2 name2"
+    "name1 name1 name1 name1 name2 name2"
+    "name3 name3 name4 name4 name4 name4"
+    "name5 name5 name6 name6 name7 name7"
+    "name8 name8 name9 name9 name10 name10"
+    "name11 name11 name12 name12 name13 name13"
+    "name14 name15 name16 name17 name18 name19"
+    "name20 name21 name22 name23 name24 name25"
+    "name26 name26 name27 name27 name28 name28"
+    "name29 name29 name29 name30 name30 name30"
+    "name31 name31 name32 name32 name33 name33";
+}
+
+
+.grid-item {
+    background-color: #444;
+    border: 2px solid #666;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.img1{
+    width: 100%;
+}
+
+
+/* Уникальные анимации для каждой ячейки */
+#item1 { grid-area: name1;
+    animation: slideInLeft 0.5s;}
+
+#item2 { grid-area: name2;
+    animation: zoomIn 0.5s; }
+
+#item3 { grid-area: name3;
+    animation: slideInRight 0.5s; }
+
+#item4 { grid-area: name4;
+    animation: slideInLeft 0.5s; }
+
+#item5 { grid-area: name5;
+    border-bottom: 7px solid white;
+    animation: slideInRight 0.5s; }
+
+#item6 { grid-area: name6;
+    animation: flipInX 0.5s; }
+
+#item7 { grid-area: name7;
+    border-bottom: 7px solid white;
+    animation: flipInX 0.5s; }
+
+#item8 { grid-area: name8;
+    animation: fadeInLeftBig 0.5s; }
+
+#item9 { grid-area: name9;
+    border-bottom: 7px solid white;
+    border-left: 7px solid white;
+    border-right: 7px solid white;
+    animation: bounceInRight 0.5s; }
+
+#item10 { grid-area: name10;
+    animation: fadeInLeftBig 0.5s; }
+
+#item11 { grid-area: name11;
+    animation: fadeInLeftBig 0.5s; }
+
+#item12 { grid-area: name12;
+    animation: fadeInLeftBig 0.5s; }
+
+#item13 { grid-area: name13;
+    animation: bounceInRight 0.5s; }
+
+#item14 { grid-area: name14;
+    animation: fadeInLeftBig 0.5s; }
+
+#item15 { grid-area: name15;
+    animation: bounceInRight 0.5s; }
+
+#item16 { grid-area: name16;
+    animation: bounceInRight 0.5s; }
+
+#item17 { grid-area: name17;
+    animation: bounceInRight 0.5s; }
+
+#item18 { grid-area: name18;
+    animation: fadeInLeftBig 0.5s; }
+
+#item19 { grid-area: name19;
+    animation: bounceInRight 0.5s; }
+
+#item20 { grid-area: name20;
+    animation: bounceInRight 0.5s; }
+
+#item21 { grid-area: name21;
+    animation: bounceInRight 0.5s; }
+
+#item22 { grid-area: name22;
+    animation: fadeInLeftBig 0.5s; }
+
+#item23 { grid-area: name23;
+    animation: zoomInUp 0.5s; }
+
+#item24 { grid-area: name24;
+    animation: bounceInRight 0.5s; }
+
+#item25 { grid-area: name25;
+    animation: fadeInLeftBig 0.5s; }
+
+#item26 { grid-area: name26;
+    animation: zoomInUp 0.5s; }
+
+#item27 { grid-area: name27;
+    animation: bounceInRight 0.5s; }
+
+#item28 { grid-area: name28;
+    animation: fadeInLeftBig 0.5s; }
+
+#item29 { grid-area: name29;
+    animation: zoomInUp 0.5s; }
+
+#item30 { grid-area: name30;
+    animation: bounceInRight 0.5s; }
+
+#item31 { grid-area: name31;
+    animation: bounceInRight 0.5s; }
+
+#item32 { grid-area: name32;
+    animation: bounceInRight 0.5s; }
+
+#item33 { grid-area: name33;
+    animation: bounceInRight 0.5s; }
+
+.text{
+    font-size: 18px;
+    text-align: center;
+}
+
+.text2{
+    font-size: 25px;
+    text-align: center;
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes flipInX {
+    from { transform: perspective(400px) rotateX(-90deg); opacity: 0; }
+    to { transform: perspective(400px) rotateX(0deg); opacity: 1; }
+}
+
+@keyframes fadeInLeftBig {
+    from { opacity: 0; transform: translateX(-2000px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounceInRight {
+   from,60%{opacity :0 ;transform :translateX(300px);}
+}
+
+@keyframes zoomInUp {
+   from{opacity :0 ;transform :scale(2) translateY(100%) ;}
+   to{opacity :1 ;transform :scale(1) translateY(0) ;}
+}
+
+.tg, .foot{
+    width: 50px;
+    height: 50px;
+    margin: 0.5vw;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    padding: 2vh;
+    background-color: #444;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    header{
+        font-size: 10px;
+    }
+    .tg, .foot{
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .text{
+        font-size: 10px;
+    }
+    footer {
+        height: 15vh;
+        padding: 3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .tg, .foot main{
+        width: 20vw;
+        height: 20vw;
+    }
+    footer {
+        height: 20vh;
+        padding: 4vh;
+    }
+}
